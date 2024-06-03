@@ -8,7 +8,16 @@ if(isset($_POST['login'])){
 }
 ?>
 
-
+<?php
+if (isset($_POST['signup'])) {
+  signup(
+      $_POST['name'],
+      $_POST['surname'],
+      $_POST['email'],
+      $_POST['password']
+  );
+} 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,6 +77,60 @@ if(isset($_POST['login'])){
               </a>
             </div>
           </form>
+
+           <!--FORMA PER SIGN UP -->
+           <form
+            method="POST"
+            id="signup-form"
+            class="sign-up-form"
+            action="#"
+            name="signup"
+          >
+            <h2 class="title">SIGN UP</h2>
+            <div class="input-field-row">
+                <div class="input-field">
+                    <input type="text" name="name" required />
+                    <label for="name">First Name</label>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="surname" required />
+                    <label for="surname">Last Name</label>
+                </div>
+             </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" required/>
+              <label for="">Email</label>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="password" required/>
+              <label for="">Password</label>
+            </div>
+
+            <button type="submit" class="btn submit" id="signup" name="signup">
+              Sing Up
+            </button>
+
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
 
 
       <div class="panels-container">
