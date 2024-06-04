@@ -1,5 +1,5 @@
 <?php
-include "../include/functions.php";
+include "./include/functions.php";
 ?>
 
 <?php
@@ -24,14 +24,12 @@ if (isset($_POST['signup'])) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beauty And Makeup</title>
+    <title>Aquamarine</title>
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="forms.css"/>
-    <script src="jquery-3.6.0.js"></script>
-    <script src="jquery.validate.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -157,6 +155,6 @@ if (isset($_POST['signup'])) {
       </div>
     </div>
 
-    <script src="forms.js"></script>
+    <script src="js/forms.js"></script>
   </body>
 </html>

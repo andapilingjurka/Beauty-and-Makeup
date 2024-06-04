@@ -6,7 +6,7 @@ dbConnection();
 /*Funksioni per Lidhjen me databaze */
 function dbConnection(){
     global $dbconn;
-    $dbconn=mysqli_connect("localhost",'root','','beautyandmakeup');
+    $dbconn=mysqli_connect("localhost",'root','','beautyandmakeuptest');
     if(!$dbconn){
         die("Deshtoi lidhja me DB".mysqli_error($dbconn));
     }
@@ -21,7 +21,7 @@ function signup($name, $surname, $email, $password)
 
     $sql = "INSERT INTO clients(name, surname, email, password) VALUES ('$name', '$surname', '$email', '$hashedPassword')";
     $result = mysqli_query($dbconn, $sql);
-      header("Location: ../LoginAndRegister/forms.php");
+      header("Location: ./forms.php");
 }
 
 /*Funksioni per Login */
@@ -42,7 +42,7 @@ function login($email, $password)
             $client['namesurname'] = $clientData['name'] . " " . $clientData['surname'];
             $client['role'] = $clientData['role'];
             $_SESSION['client'] = $client;
-            header("Location: ../home.php");
+            header("Location: ./home.php");
         } else {
             // echo "Your password is incorrect!";
         }
