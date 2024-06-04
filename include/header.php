@@ -3,46 +3,75 @@ include "functions.php";
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty And Makeup</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <!-- <link rel="icon" type="image/x-icon" href="images/icon.png"> IKONA FAQES-->  
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Aquamarine</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="slick.min.js"></script>
+    
 </head>
 <body>
-<header>
-    <div class="container">
-        <div class="header-content">
-            <div class="logo">
-                <a href="index.php">
-                    <h3>Destination Dreamers</h3>
-                </a>
+    <header>
+        <nav class="navbar">
+            <div class="top-section">
+                
+                <div class="logo">
+                    <a href="./home.php"><h1>Aquamarine</h1></a>
+                </div>
+                <div class="icons">
+                    <i class="bi bi-person"></i>
+                    <i class="bi bi-heart-fill"></i>
+                    <i class="bi bi-cart"></i>
+                </div>
             </div>
-            <div class="navbar">
-                <ul class="nav-items">
-                    <li><a  href='home.php'>Home</a></li>
-                    <li><a  href='contact.php'>Contact Us</a></li>
-                    <?php
-                        if(isset($_SESSION['client'])){
-                            echo "<li><a href='destinations.php'>Destinations</a></li>";
-                            echo "<li><a href='staff.php' >About Us</a></li>";
-                            
-                            if($_SESSION['client']['role']==1){
-                                echo "<li><a  href='dashboard/client.php'>Dashboard</a></li>";
-                            }
-                            echo " <li><a  href='LoginAndRegister/logout.php'>Log Out</a></li>";
-                        } elseif (!isset($_SESSION['client'])) {
-                      
-                            echo "<li><a  href='LoginAndRegister/forms.php'>Sign In</a></li>";
-                            
-                        }
-                    ?>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
+            <ul class="nav-links">
+                <li><a href='./home.php'>Home</a></li>
+                <li><a href='#'>About Us</a></li>
+                <?php 
+                    if(isset($_SESSION['client'])){
+                        echo"<li><a href='#'>Make up <img src='images/down-arrow.png' class='down-arrow' /></a>
+                                <ul class='dropdown'>
+                                    <li><a href='#'>Eyes</a></li>
+                                    <li><a href='#'>Face</a></li>
+                                    <li><a href='#'>Lips</a></li>
+                                    <li><a href='#'>Nails</a></li>
+                                    <li><a href='#'>Brushes</a></li>
+                                </ul>
+                            </li>";
+                        echo"<li><a href='#'>Skin Care <img src='images/down-arrow.png' class='down-arrow' /></a>
+                                <ul class='dropdown'>
+                                    <li><a href='#'>Face Care</a></li>
+                                    <li><a href='#'>Eye Care</a></li>
+                                    <li><a href='#'>Lip Care</a></li>
+                                    <li><a href='#'>Hand Care</a></li>
+                                    <li><a href='#'>Foot Care</a></li>
+                                    <li><a href='#'>Body Care</a></li>
+                                </ul>
+                            </li>";
+                        echo"<li><a href='#'>How To <img src='images/down-arrow.png' class='down-arrow' /></a>
+                             <ul class='dropdown'>
+                                 <li><a href='#'>Eye Makeup Tips</a></li>
+                                 <li><a href='#'>Face Makeup Tips</a></li>
+                                 <li><a href='#'>Lips Makeup Tips</a></li>
+                                 <li><a href='#'>Skin Care Tips</a></li>
+                             </ul>
+                          </li>";
+                    if($_SESSION['client']['role']==1){
+                        echo"<li><a href='#'>Dashboard</a></li>";
+                    }
+                    echo "<li><a href='./logout.php'>Log Out</a></li>";      
+                }   
+                elseif (!isset($_SESSION['client'])) {
+                    echo "<li><a href='./forms.php'>Sign In</a></li>";
+                }
+            ?>        
+            </ul>
+        </nav>
+    </header>
+
+    
+    <script src="./js/style.js"></script>
