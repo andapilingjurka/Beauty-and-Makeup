@@ -29,7 +29,7 @@ if (isset($_POST['signup'])) {
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="forms.css"/>
+    <link rel="stylesheet" href="css/forms.css"/>
   </head>
   <body>
     <div class="container">
@@ -140,7 +140,7 @@ if (isset($_POST['signup'])) {
             </p>
             <button class="btn transparent" id="sign-up-btn">Sign up</button>
           </div>
-          <img src="../images/img1.png" class="image" alt="" style="margin-right:20px;" />
+          <img src="./images/img1.png" class="image" alt="" style="margin-right:20px;" />
         </div>
         <div class="panel right-panel">
           <div class="content">
@@ -150,7 +150,7 @@ if (isset($_POST['signup'])) {
             </p>
             <button class="btn transparent" id="sign-in-btn">Sign in</button>
           </div>
-          <img src="../images/img2.png" class="image" alt="" style="padding-left:50px;" />
+          <img src="./images/img2.png" class="image" alt="" style="padding-left:50px;" />
         </div>
       </div>
     </div>
