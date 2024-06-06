@@ -372,3 +372,119 @@ section {
   .swiper-3d .swiper-slide-shadow-right {
     background-image: none;
   }
+
+
+  
+/*//////////////////////FOOTER////////////////////////////*/
+.main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: #fff;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #000;
+    min-height: 230px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icon,
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 30px;
+    color: #fff;
+    margin: 0 20px;
+    display: inline-block;
+    transition: 0.5s;
+    padding-top: 19px;
+}
+
+footer .social_icon li a {
+    transform: translateY(-10px);
+}
+
+footer .menu li a {
+    font-size: 18px;
+    color: #fff;
+    margin: 0 20px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+    text-transform: uppercase;
+    font-family: "Gruppo", sans-serif;
+    font-weight: bolder;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 17px;
+    font-family: "Gruppo", sans-serif;
+}
+
+footer h2{
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Dancing Script", cursive;
+    padding-bottom: 15px;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #fff url(../images/footer.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 3s linear infinite;
+}
+@keyframes animatewave {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+
+}
+.zoom li a {
+    transition: 1s;
+}
+
+.zoom li a:hover {
+    transform: scale(1.1);
+}
