@@ -9,9 +9,17 @@ include "functions.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aquamarine</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
     <script src="slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
 </head>
 <body>
@@ -30,7 +38,7 @@ include "functions.php";
             </div>
             <ul class="nav-links">
                 <li><a href='./home.php'>Home</a></li>
-                <li><a href='#'>About Us</a></li>
+                <li><a href='./aboutus.php'>About Us</a></li>
                 <?php 
                     if(isset($_SESSION['client'])){
                         echo"<li><a href='#'>Make up <img src='images/down-arrow.png' class='down-arrow' /></a>
@@ -75,3 +83,4 @@ include "functions.php";
 
     
     <script src="./js/style.js"></script>
+    
