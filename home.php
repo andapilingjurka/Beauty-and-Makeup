@@ -1,5 +1,5 @@
 <?php
-include "include/header.php";
+include "include/header_white.php";
 ?>
 
 <div class="slide-bar">
@@ -16,7 +16,7 @@ include "include/header.php";
 					<div class="overlay">
 						<h3>Make Up</h3>
 						<p>Enhance your natural beauty with our versatile makeup collection, designed to bring out the best in you for any occasion.</p>
-                        <a href="#">Shop Now</a>
+                        <a href="makeup.php">Shop Now</a>
 					</div>
 				</div>
 				<div class="box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
@@ -24,7 +24,7 @@ include "include/header.php";
 					<div class="overlay">
 						<h3>Skin Care</h3>
 						<p>Achieve a radiant, healthy glow with our premium skincare products, tailored to nourish and rejuvenate all skin types.</p>
-                        <a href="#">Shop Now</a>
+                        <a href="skincare.php">Shop Now</a>
 					</div>
 				</div>
 				<div class="box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
