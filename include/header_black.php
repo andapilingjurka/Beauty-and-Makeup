@@ -16,7 +16,7 @@ include "functions.php";
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
-    <script src="slick.min.js"></script>
+    <!-- <script src="slick.min.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -36,30 +36,13 @@ include "functions.php";
                     <i class="bi bi-cart" style="color:#fff;"></i>
                 </div>
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links nav-links-black">
                 <li><a href='./home.php' style='color:#fff;'>Home</a></li>
                 <li><a href='./aboutus.php' style='color:#fff;'>About Us</a></li>
                 <?php 
                     if(isset($_SESSION['client'])){
-                        echo"<li><a href='#' style='color:#fff;'>Make up <img src='images/white-down-arrow.png' class='down-arrow' /></a>
-                                <ul class='dropdown'>
-                                    <li><a href='#'>Eyes</a></li>
-                                    <li><a href='#'>Face</a></li>
-                                    <li><a href='#'>Lips</a></li>
-                                    <li><a href='#'>Nails</a></li>
-                                    <li><a href='#'>Brushes</a></li>
-                                </ul>
-                            </li>";
-                        echo"<li><a href='#' style='color:#fff;'>Skin Care <img src='images/white-down-arrow.png' class='down-arrow' /></a>
-                                <ul class='dropdown'>
-                                    <li><a href='#'>Face Care</a></li>
-                                    <li><a href='#'>Eye Care</a></li>
-                                    <li><a href='#'>Lip Care</a></li>
-                                    <li><a href='#'>Hand Care</a></li>
-                                    <li><a href='#'>Foot Care</a></li>
-                                    <li><a href='#'>Body Care</a></li>
-                                </ul>
-                            </li>";
+                        echo"<li><a href='./makeup.php' style='color:#fff;'>Make up</a></li>";
+                        echo"<li><a href='./skincare.php' style='color:#fff;'>Skin Care </a></li>";
                         echo"<li><a href='#' style='color:#fff;'>How To <img src='images/white-down-arrow.png' class='down-arrow' /></a>
                              <ul class='dropdown'>
                                  <li><a href='#'>Eye Makeup Tips</a></li>

@@ -11,7 +11,7 @@
             <ul class="menu">
                 <li><a href="./home.php">Home</a></li>
                 <li><a href="./aboutus.php">About Us</a></li>
-                <li><a href="#">Make Up</a></li>
+                <li><a href="./skincare.php">Make Up</a></li>
                 <li><a href="#">Skin Care</a></li>
                 <li><a href="#">How To</a></li>
             </ul>
