@@ -2,6 +2,7 @@
 include "include/header_white.php";
 ?>
 
+
 <div class="slide-bar">
         <div class="img" id="image-slider">
 
@@ -12,7 +13,7 @@ include "include/header_white.php";
 		<div class="wrapper">
 			<div class="box-area">
 				<div class="box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
-					<img alt="" src="images/card1.jpg">
+					<img alt="" src="images/card1.jpg" loading="lazy">
 					<div class="overlay">
 						<h3>Make Up</h3>
 						<p>Enhance your natural beauty with our versatile makeup collection, designed to bring out the best in you for any occasion.</p>
@@ -20,7 +21,7 @@ include "include/header_white.php";
 					</div>
 				</div>
 				<div class="box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
-					<img alt="" src="images/card2.jpg">
+					<img alt="" src="images/card2.jpg" loading="lazy">
 					<div class="overlay">
 						<h3>Skin Care</h3>
 						<p>Achieve a radiant, healthy glow with our premium skincare products, tailored to nourish and rejuvenate all skin types.</p>
@@ -28,7 +29,7 @@ include "include/header_white.php";
 					</div>
 				</div>
 				<div class="box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
-					<img alt="" src="images/card3.jpg">
+					<img alt="" src="images/card3.jpg" loading="lazy">
 					<div class="overlay">
 						<h3>How To Use</h3>
 						<p>Discover the perfect routine with our step-by-step guides, helping you make the most of your makeup and skincare products effortlessly.</p>
@@ -45,7 +46,7 @@ include "include/header_white.php";
 				<div class="quality-content">
 					<h1>What We Offer?</h1>
 					<p>
-					Welcome to Aquamarine, your ultimate destination for makeup and beauty. Our website offers a curated 
+					Welcome to Plaza Cosmetics, your ultimate destination for makeup and beauty. Our website offers a curated 
 					selection of high-quality beauty products to enhance your natural radiance and cater to your style. 
 					We believe beauty is a personal journey, and our range of cosmetics and skincare products empowers 
 					you to express your unique self. From vibrant lipsticks and luxurious foundations to rejuvenating 
@@ -57,12 +58,11 @@ include "include/header_white.php";
 
 			<div class="main-inner-quality" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
 					<div class="quality-content quality-image">
-						<img src="images/img2.png" alt="">
+						<img src="images/img2.png" alt="" loading="lazy">
 					</div>
 			</div>
     </div>
 </div>
-
 
  	<div class="bestsellers-text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="100">
 		<h1>Our Bestsellers</h1>
@@ -111,7 +111,14 @@ include "include/header_white.php";
 	</section>
 
 
+	<?php
+		include "pixijs.php";
+	?>
+
 
 <?php
-    include "include/footer.php";
+    include "include/footer2.php";
 ?>
+
+
+

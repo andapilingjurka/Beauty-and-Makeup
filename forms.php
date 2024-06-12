@@ -17,6 +17,7 @@ if (isset($_POST['signup'])) {
       $_POST['password']
   );
 } 
+
 ?>
 
 <!DOCTYPE html>
@@ -24,12 +25,13 @@ if (isset($_POST['signup'])) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aquamarine</title>
+    <title>Plaza Cosmetics</title>
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/forms.css"/>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
   </head>
   <body>
     <div class="container">
@@ -76,8 +78,9 @@ if (isset($_POST['signup'])) {
             </div>
           </form>
 
+
            <!--FORMA PER SIGN UP -->
-           <form
+          <form
             method="POST"
             id="signup-form"
             class="sign-up-form"
@@ -129,7 +132,6 @@ if (isset($_POST['signup'])) {
           </form>
         </div>
       </div>
-
 
       <div class="panels-container">
         <div class="panel left-panel">

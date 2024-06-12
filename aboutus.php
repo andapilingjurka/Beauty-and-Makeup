@@ -6,16 +6,16 @@ include "include/header_white.php";
     <div class="slider-aboutus" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
         <div class="wrapper aboutus-wrapper">
             <div class="img-area">
-                <img src="images/cub1.jpg">
-                <img src="images/cub3.jpg"> 
-                <img src="images/cub2.jpg"> 
-                <img src="images/cub4.jpg">
+                <img src="images/cub1.jpg" loading="lazy">
+                <img src="images/cub3.jpg" loading="lazy"> 
+                <img src="images/cub2.jpg" loading="lazy"> 
+                <img src="images/cub4.jpg" loading="lazy">
             </div>
         </div>
     </div>
     <div class="text-content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
         <h1>About Us</h1>
-        <p>Aquamarine is your premier destination for indulging 
+        <p>Plaza Cosmetics is your premier destination for indulging 
             in the world of beauty. With an exquisite array of 
             makeup, skincare, and perfumes, we aim to redefine 
             your beauty experience. Our commitment to excellence 
@@ -34,14 +34,14 @@ include "include/header_white.php";
         <h1>Our Store</h1>
     </div>    
         <div class="image-wrapper" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-offset="0">
-            <img src="images/store0.jpg" alt="Large Image" class="large-image">
+            <img src="images/store0.jpg" alt="Large Image" class="large-image" loading="lazy">
             <div class="small-images" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="800" data-aos-offset="0">
-                <img src="images/store1.jpg" alt="Small Image 1" class="small-image">
-                <img src="images/store2.jpg" alt="Small Image 2" class="small-image">
+                <img src="images/store1.jpg" alt="Small Image 1" class="small-image" loading="lazy">
+                <img src="images/store2.jpg" alt="Small Image 2" class="small-image" loading="lazy">
             </div>
             <div class="small-images" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1200" data-aos-offset="0">
-                <img src="images/store3.jpeg" alt="Small Image 1" class="small-image">
-                <img src="images/store4.jpg" alt="Small Image 2" class="small-image">
+                <img src="images/store3.jpeg" alt="Small Image 1" class="small-image" loading="lazy">
+                <img src="images/store4.jpg" alt="Small Image 2" class="small-image" loading="lazy">
             </div>
         </div>
 </div>
@@ -57,10 +57,11 @@ include "include/header_white.php";
         </p>
     </div>   
     <div class="shipping-img" data-aos="zoom-in" data-aos-duration="1500">
-        <img src="images/shipping.png" alt="World Wide Shipping">
+        <img src="images/shipping.png" alt="World Wide Shipping" loading="lazy">
     </div>
 </div>
+
     
 <?php
 include "include/footer.php";
-?> 
+?>  
