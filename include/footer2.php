@@ -1,10 +1,7 @@
 <div class="main" data-aos="fade-up"
      data-aos-easing="linear"
-     data-aos-duration="500">
-        <footer>
-            <div class="waves">
-                <div class="wave" id="wave1"></div>
-            </div>
+     data-aos-duration="400">
+        <footer style='height: 300px;'>
 
             <h2>Plaza Cosmetics</h2>
 
