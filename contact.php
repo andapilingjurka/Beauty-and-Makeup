@@ -14,6 +14,14 @@ if (isset($_POST['send'])) {
 }
 ?>
 
+<?php
+if (!isset($_SESSION['client'])) {
+    header("Location:forms.php");
+    exit(); 
+}
+?>
+
+
 <body>
     <div class="contact-form">
 
