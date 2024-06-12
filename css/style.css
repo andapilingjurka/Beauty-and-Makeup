@@ -2,20 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Candal&family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Marck+Script&family=PT+Sans+Narrow:wght@400;700&family=Pacifico&family=Rubik+Mono+One&family=Seymour+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Candal&family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Gruppo&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Marck+Script&family=PT+Sans+Narrow:wght@400;700&family=Pacifico&family=Rubik+Mono+One&family=Seymour+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Candal&family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Gruppo&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Marck+Script&family=PT+Sans+Narrow:wght@400;700&family=Pacifico&family=Rubik+Mono+One&family=Seymour+One&family=Unbounded:wght@200..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }    
-
 body{
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
-
 /*//////////////////////PJESA E HEADER////////////////////////////*/
 .navbar {
     display: flex;
@@ -26,42 +24,36 @@ body{
     position: relative; 
     z-index: 1; 
 }
-
 .top-section {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
 }
-
 .logo {
     text-align: center;
     flex-grow: 1;
     margin-left: 200px;
 }
-
 .logo a {
     margin: 0;
-    font-size: 29px;
+    font-size: 24px;
     font-weight: bold;
     text-decoration: none;
     color: #000;
-    font-family: "Dancing Script", cursive;
+    font-family: "Zen Dots", sans-serif;
 }
-
 .icons {
     display: flex;
     align-items: center;
     margin-right: 60px;
 }
-
 .icons i{
     color: #000;
     margin: 0 10px;
     position: relative;
     font-size: 22px;
 }
-
 .nav-links {
     list-style: none;
     display: flex;
@@ -70,12 +62,10 @@ body{
     width: 100%;
     justify-content: center;
 }
-
 .nav-links li {
     margin-left: 25px;
     position: relative;
 }
-
 .nav-links a {
     text-decoration: none;
     color: #000;
@@ -88,7 +78,6 @@ body{
     font-weight: 600;
     position: relative;
 }
-
 .nav-links a:after {
     content: '';
     position: absolute;
@@ -99,11 +88,9 @@ body{
     background-color: transparent; 
     transition: background-color 0.8s ease; 
 }
-
 .nav-links a:hover:after {
     background-color: #000; 
 }
-
 .nav-links-black a::after{
     content: '';
     position: absolute;
@@ -114,16 +101,13 @@ body{
     background-color: transparent; 
     transition: background-color 0.8s ease; 
 }
-
 .nav-links-black a:hover:after {
     background-color: #ffffff; 
 }
-
 .nav-links .down-arrow{
     width: 20px;
     height: 20px; 
 }
-
 .dropdown {
     display: none;
     position: absolute;
@@ -136,23 +120,18 @@ body{
     z-index: 1000;
     width:300px
 }
-
 .dropdown li {
     padding: 10px 10px;
 }
-
 .dropdown li a {
     color: black;
     text-decoration: none;
     display: block;
     font-size: 15px;
 }
-
 .nav-links li:hover .dropdown {
     display: block;
 }
-
-
 /*//////////////////////PJESA E HOME////////////////////////////*/
 /*slider part*/
 .slide-bar .img {
@@ -163,7 +142,6 @@ body{
     background-size: cover;
     animation: slider 30s infinite;
 }
-
 @keyframes slider {
     0% {
         background-image: url("../images/sld1.jpg");
@@ -181,7 +159,6 @@ body{
         background-image: url("../images/sld5.jpg"); 
     }
 }
-
 /*card part*/
 .wrapper{
     padding: 10px 10%;
@@ -259,13 +236,11 @@ body{
  :root {
     --btn-color: #000000; 
 }
-
 .quality {
     padding: 0rem 7%;
     height: 100vh;
     background-image: linear-gradient(60.34deg, white 52.45%, var(--btn-color) 52.45%);
 }
-
 .main-quality {
     display: flex;
     justify-content: space-between; 
@@ -273,15 +248,12 @@ body{
     flex-wrap: nowrap; 
     gap: 15px;
 }
-
 .main-inner-quality {
     flex: 1;
 }
-
 .quality-content {
     padding: 0 4rem;
 }
-
 .quality-content h1 {
     color: #000;
     font-size: 45px;
@@ -289,13 +261,11 @@ body{
     margin-bottom: 15px;
     font-family: "Dancing Script", cursive;
 }
-
 .quality-content p {
     color:#000;
     font-size: 15px;
     line-height: 30px;
 }
-
 .quality-image {
     width: 100%;
 }
@@ -304,7 +274,6 @@ body{
     height: auto;
     object-fit: cover;
 }
-
 /*Slider e best sellers product part*/
 section {
     position: relative;
@@ -314,27 +283,22 @@ section {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 140px;
+    margin-bottom: 100px;
   }
-  
   .bestsellers-text{
     text-align: left;
     margin-top: 80px;
     padding-left: 150px;
-    
   }
-
   .bestsellers-text h1{
     color: #000;
     font-size: 34px;
     font-weight: 500;
     font-family: "Unbounded", sans-serif;
   }
-
   .swiper {
     width: 80%;
   }
-  
   .swiper-slide {
     width: 80%; 
     max-width: 300px; 
@@ -348,12 +312,10 @@ section {
     align-items: self-start;
     background-size: cover;
     background-position: center; 
-  }
-  
+  } 
   .swiper-slide-active {
     filter: blur(0px);
   }
-  
   .swiper-slide h2 {
     color: #fff;
     font-weight: 400;
@@ -363,7 +325,6 @@ section {
     padding: 25px 45px 0 25px;
     font-family: "Unbounded", sans-serif;
   }
-  
   .swiper-slide p {
     color: #fff;
     font-size: 16px;
@@ -372,40 +333,30 @@ section {
     align-items: center;
     padding: 0 25px 35px 25px;
   }
-  
-  
   .swiper-slide--one {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
       url("../images/bestsell1.jpg")no-repeat center/cover;
   }
-  
   .swiper-slide--two {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
         url("../images/bestsell2.jpg")no-repeat center/cover;
   }
-  
   .swiper-slide--three {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
         url("../images/bestsell3.jpg")no-repeat center/cover;
   }
-  
   .swiper-slide--four {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
         url("../images/bestsell4.jpg")no-repeat center/cover;
   }
-  
   .swiper-slide--five {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
         url("../images/bestsell5.png")no-repeat center/cover;
   }
-  
   .swiper-3d .swiper-slide-shadow-left,
   .swiper-3d .swiper-slide-shadow-right {
     background-image: none;
   }
-
-
-  
 /*//////////////////////FOOTER////////////////////////////*/
   .main {
     display: flex;
@@ -413,7 +364,6 @@ section {
     align-items: flex-end;
     background: #fff;
 }
-
 footer {
     position: relative;
     width: 100%;
@@ -424,11 +374,9 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     flex-shrink: 0;
     z-index: 2;
 }
-
 footer .social_icon,
 footer .menu {
     position: relative;
@@ -438,12 +386,10 @@ footer .menu {
     margin: 10px 0;
     flex-wrap: wrap;
 }
-
 footer .social_icon li,
 footer .menu li {
     list-style: none;
 }
-
 footer .social_icon li a {
     font-size: 30px;
     color: #fff;
@@ -452,11 +398,9 @@ footer .social_icon li a {
     transition: 0.5s;
     padding-top: 19px;
 }
-
 footer .social_icon li a {
     transform: translateY(-10px);
 }
-
 footer .menu li a {
     font-size: 18px;
     color: #fff;
@@ -468,11 +412,9 @@ footer .menu li a {
     font-family: "Gruppo", sans-serif;
     font-weight: bolder;
 }
-
 footer .menu li a:hover {
     opacity: 1;
 }
-
 footer p {
     color: #fff;
     text-align: center;
@@ -480,15 +422,14 @@ footer p {
     font-size: 17px;
     font-family: "Gruppo", sans-serif;
 }
-
 footer h2{
     color: #fff;
     text-align: center;
-    font-size: 36px;
-    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    font-family: "Zen Dots", sans-serif;
     padding-bottom: 15px;
+    font-weight: 300;
 }
-
 footer .wave {
     position: absolute;
     top: -100px;
@@ -498,7 +439,6 @@ footer .wave {
     background: #fff url(../images/footer.png);
     background-size: 1000px 100px;
 }
-
 footer .wave#wave1 {
     z-index: 1000;
     opacity: 1;
@@ -513,17 +453,13 @@ footer .wave#wave1 {
     100% {
         background-position-x: 1000px;
     }
-
 }
 .zoom li a {
     transition: 1s;
 }
-
 .zoom li a:hover {
     transform: scale(1.1);
 }
-
-
 /*//////////////////////PJESA E ABOUT US////////////////////////////*/
 /*Pjesa e img me tekst*/
 .section-aboutus {
@@ -532,7 +468,6 @@ footer .wave#wave1 {
     align-items: center;
     height: 70vh;
 }
-
 .slider-aboutus {
     background: linear-gradient(to right, #ffffff, #ffffff);
     display: flex;
@@ -541,32 +476,27 @@ footer .wave#wave1 {
     width: 50%; 
     padding-left: 100px;
 }
-
 .text-content {
     width: 50%; 
     padding-left: 50px;
     padding-right: 130px;
 }
-
 .text-content h1 {
     font-size: 50px;
     margin-bottom: 40px;
     font-family: "Dancing Script", cursive;
     font-weight: bolder;
 }
-
 .text-content p {
     font-size: 17px;
     font-family: "Poppins", sans-serif;
     font-style: italic;
 }
-
 .aboutus-wrapper {
     width: 370px;
     height: 370px; 
     perspective: 1000px;
 }
-
 .img-area {
     height: 100%;
     width: 100%;
@@ -575,29 +505,23 @@ footer .wave#wave1 {
     transition: all 1s ease-in-out;
     animation: animate 16s infinite;
 }
-
 .img-area img {
     position: absolute;
     width: 370px;
     height: 370px;
 }
-
 .img-area img:nth-child(1) {
     transform: rotateY(0) translateZ(185px); 
 }
-
 .img-area img:nth-child(2) {
     transform: rotateY(90deg) translateZ(185px); 
 }
-
 .img-area img:nth-child(3) {
     transform: rotateY(-90deg) translateZ(185px); 
 }
-
 .img-area img:nth-child(4) {
     transform: rotateY(180deg) translateZ(185px); 
 }
-
 @keyframes animate {
     0% {
         transform: rotateY(0deg);
@@ -615,7 +539,6 @@ footer .wave#wave1 {
         transform: rotateY(360deg);
     }
 }
-
 /*Pjesa e fotografive per store*/
 .section2-aboutus{
     background-color: black;
@@ -623,7 +546,6 @@ footer .wave#wave1 {
     margin-top: 100px;
     text-align: center;
 }
-
 .section2-aboutus h1 {
     padding-top: 50px;
     margin-bottom: 50px;
@@ -633,48 +555,38 @@ footer .wave#wave1 {
     text-align: left;
     padding-left: 210px;
 }
-
 .image-wrapper {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
-
 .large-image {
     height: 610px; 
     width: 440px;
     margin-right: 10px;
 }
-
 .small-images {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 40px;
 }
-
 .small-image {
     height: 290px; 
     width: 300px;
     margin-bottom: 30px;
 }
-
 .small-image:last-child {
     margin-bottom: 0;
 }
-
 .large-image:hover {
     transform: scale(1.1); 
     transition: transform 0.8s ease; 
 }
-
 .small-image:hover {
     transform: scale(1.1); 
     transition: transform 0.8s ease; 
 }
-
-
-
 /*pjesa e fundit tek about us*/
 .section3-aboutus{
     height: 100vh;
@@ -706,8 +618,6 @@ footer .wave#wave1 {
     max-width: 100%;
     height: 550px;
 }
-
-
 /*//////////////////////PJESA E MAKEUP////////////////////////////*/
 /* Pjesa e videos */
 .makeupvideo {
@@ -724,15 +634,12 @@ footer .wave#wave1 {
     height: 100%;
     object-fit: cover; 
 }
-
 .content {
-    margin-top: 380vh; 
+    margin-top: 370vh; 
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-
-
 /* Produktet per makeup */
 .first-carousel {
     display: flex;
@@ -745,7 +652,6 @@ footer .wave#wave1 {
     top: 90vh;
     z-index: 1;
   }
-
 .second-carousel{
     display: flex;
     padding: 0 35px;
@@ -756,7 +662,6 @@ footer .wave#wave1 {
     position: absolute;
     top: 160vh;
 }  
-
 .third-carousel{
     display: flex;
     padding: 0 35px;
@@ -767,7 +672,6 @@ footer .wave#wave1 {
     position: absolute;
     top: 230vh;
 }  
-
 .fourth-carousel{
     display: flex;
     padding: 0 35px;
@@ -778,8 +682,6 @@ footer .wave#wave1 {
     position: absolute;
     top: 300vh;
 }  
-
-
 .makeup {
     max-width: 1600px;
     width: 100%;
@@ -801,7 +703,6 @@ footer .wave#wave1 {
     transform: translateY(-50%);
     transition: transform 0.1s linear;
   }
-  
 .makeup i:active {
     transform: translateY(-50%) scale(0.85);
   }
@@ -864,7 +765,6 @@ footer .wave#wave1 {
 .card.makeup-card .img:hover img {
     transform: scale(1.1);
 }
-
 .makeup-card .text-overlay {
     position: absolute;
     top: 50%; 
@@ -880,7 +780,6 @@ footer .wave#wave1 {
     transition: background-color 0.3s ease; 
     margin-top: 148px;
   }
-
   .text-overlay{
     height: 100px;
   }
@@ -902,9 +801,7 @@ footer .wave#wave1 {
     font-size: 14px; 
     font-family: "Unbounded", sans-serif;
     font-weight: 400;
-  }
- 
-  
+  } 
 /*//////////////////////PJESA E SKINCARE////////////////////////////*/
 /* Për videon */
 .skincarevideo {
@@ -921,4 +818,72 @@ footer .wave#wave1 {
     height: 100%;
     object-fit: cover; 
 }
-
+/*Forma per kontaktin */
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 78vh;
+}
+.image-contact {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+.image-contact img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contactus-form {
+    flex: 1;
+    margin: 0 100px;
+    max-width: 600px;
+    padding-top: 20px;
+}
+.contactus-form h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-family: "Dancing Script", cursive;
+}
+.contactus-form div {
+    margin-bottom: 15px;
+}
+.contactus-form input,
+.contactus-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.contactus-form input::placeholder,
+.contactus-form textarea::placeholder {
+    color: #999;
+    opacity: 1; 
+    font-family: "Gruppo", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+}
+.contactus-form .btn {
+    background-color: black;
+    border:  3px solid black;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: "Gruppo", sans-serif;
+    font-size: 18px;
+    padding: 15px 20px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.contactus-form .btn:hover {
+    background-color: #fff;
+    color: #000;
+  }
